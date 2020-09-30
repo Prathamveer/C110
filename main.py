@@ -29,8 +29,8 @@ def show_fig(mean_list):
 
 def setup():
     mean_list = []
-    for i in range(0,1000):
-        set_of_means= random_set_of_mean(100)
+    for i in range(0,100):
+        set_of_means= random_set_of_mean(30)
         mean_list.append(set_of_means)
     show_fig(mean_list)
     
@@ -47,8 +47,8 @@ print("population mean:- ", population_mean)
 
 def standard_deviation():
     mean_list = []
-    for i in range(0,1000):
-        set_of_means= random_set_of_mean(100)
+    for i in range(0,100):
+        set_of_means= random_set_of_mean(30)
         mean_list.append(set_of_means)
 
     std_deviation = statistics.stdev(mean_list)
